@@ -1,0 +1,6 @@
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DomainModel\bin\Debug\SV18T1021351.DomainModel.dll
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DomainModel\bin\Debug\SV18T1021351.DomainModel.pdb
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DomainModel\obj\Debug\SV18T1021351.DomainModel.csproj.CoreCompileInputs.cache
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DomainModel\obj\Debug\SV18T1021351.DomainModel.dll
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DomainModel\obj\Debug\SV18T1021351.DomainModel.pdb
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DomainModel\obj\Debug\SV18T1021351.DomainModel.csproj.AssemblyReference.cache

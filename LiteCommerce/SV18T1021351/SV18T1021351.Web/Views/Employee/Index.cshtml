@@ -1,0 +1,93 @@
+﻿@model SV18T1021351.Web.Models.EmployeePagenationResultModel
+@{
+    ViewBag.Title = "Nhân viên";
+}
+<!-- Default box -->
+<div class="box" style="">
+    <form action="~/employee" method="get">
+        <div class="input-group">
+            <input type="text" name="searchValue"
+                   class="form-control"
+                   placeholder="Nhập tên hoặc địa chỉ khách hàng cần tìm...">
+            <span class="input-group-btn">
+                <button type="submit" id="search-btn" class="btn btn-flat btn-info" autofocus @Model.SearchValue>
+                    <i class="fa fa-search"></i>
+                </button>
+                <a href="~/employee/create" class="btn btn-flat btn-primary" style="margin-left:10px">
+                    <i class="fa fa-plus"></i>Bổ sung
+                </a>
+            </span>
+        </div>
+    </form>
+    <div class="box-header with-border">
+        <h3 class="box-title"></h3>
+    </div>
+    <div class="row" style="margin: 1px 0 10px 0;">
+        <div class="col-sm-12">
+            Có <strong>@Model.RowCount</strong> khách hàng trong tổng số <strong>@Model.PageCount</strong> trang
+        </div>
+    </div>
+    <div class="box-body">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover table-striped">
+                <thead>
+                    <tr class="bg-primary">
+                        <th>Họ</th>
+                        <th>Tên</th>
+                        <th>Ngày sinh</th>
+                        <th>Ảnh</th>
+                        <th>Ghi chú</th>
+                        <th>Email</th>
+                        <th style="width:75px">&nbsp;
+                        <th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Data)
+                    {
+                        <tr>
+                            <td>@item.LastName</td>
+                            <td>@item.FirstName</td>
+                            <td>@item.BirthDate</td>
+                            <td>
+                                <img width="150px" height="150px" src="@item.Photo" />
+                            </td>
+                            <td>@item.Notes</td>
+                            <td>@item.Email</td>
+                            <td class="text-right">
+                                <a href="~/employee/edit/@item.EmployeeID" class="btn btn-xs btn btn-flat btn-info">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                                <a href="~/employee/delete/@item.EmployeeID " class="btn btn-xs btn btn-flat btn-danger">
+                                    <i class="fa fa-remove"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- /.box-body -->
+    <div class="box-footer">
+        <div class="container-fluid">
+            <div class="text-center">
+                <ul class="pagination">
+                    @for (int i = 1; i <= Model.PageCount; i++)
+                    {
+                        if (i == Model.Page)
+                        {
+                            <li class="active"><a href="#">@i</a></li>
+                        }
+                        else
+                        {
+                            <li><a href="~/employee?page=@i&searchValue=@Model.SearchValue">@i</a></li>
+                        }
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.box-footer-->
+</div>
+<!-- /.box -->

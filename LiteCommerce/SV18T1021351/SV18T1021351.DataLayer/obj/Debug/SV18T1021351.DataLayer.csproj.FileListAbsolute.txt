@@ -1,0 +1,9 @@
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DataLayer\bin\Debug\SV18T1021351.DataLayer.dll
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DataLayer\bin\Debug\SV18T1021351.DataLayer.pdb
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DataLayer\bin\Debug\SV18T1021351.DomainModel.dll
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DataLayer\bin\Debug\SV18T1021351.DomainModel.pdb
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DataLayer\obj\Debug\SV18T1021351.DataLayer.csproj.AssemblyReference.cache
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DataLayer\obj\Debug\SV18T1021351.DataLayer.csproj.CoreCompileInputs.cache
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DataLayer\obj\Debug\SV18T1021351.DataLayer.csproj.CopyComplete
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DataLayer\obj\Debug\SV18T1021351.DataLayer.dll
+D:\LiteCommerce\SV18T1021351\SV18T1021351.DataLayer\obj\Debug\SV18T1021351.DataLayer.pdb
